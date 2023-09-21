@@ -1,6 +1,4 @@
-package 面试经典150题;
-
-import java.util.Arrays;
+package 面试经典150题.数组_字符串;
 
 /**
  * n 个孩子站成一排。给你一个整数数组 ratings 表示每个孩子的评分。

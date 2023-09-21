@@ -1,4 +1,4 @@
-package 面试经典150题;
+package 面试经典150题.数组_字符串;
 
 public class L238_除自身以外数组的乘积 {
 
