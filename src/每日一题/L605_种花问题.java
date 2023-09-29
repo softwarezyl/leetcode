@@ -33,21 +33,21 @@ public class L605_种花问题 {
     public static void main(String[] args) {
         L605_种花问题 test = new L605_种花问题();
 
-//        int[] flowerbed1 = new int[]{1, 0, 0, 0, 1};
-//        boolean result1 = test.canPlaceFlowers(flowerbed1, 1);
-//        System.out.println(result1);
-//
-//        int[] flowerbed2 = new int[]{1, 0, 0, 0, 1};
-//        boolean result2 = test.canPlaceFlowers(flowerbed2, 2);
-//        System.out.println(result2);
-//
-//        int[] flowerbed3 = new int[]{1, 0, 0, 0, 0, 1};
-//        boolean result3 = test.canPlaceFlowers(flowerbed3, 2);
-//        System.out.println(result3);
-//
-//        int[] flowerbed4 = new int[]{1, 0, 0, 0, 1, 0, 0};
-//        boolean result4 = test.canPlaceFlowers(flowerbed4, 2);
-//        System.out.println(result4);
+        int[] flowerbed1 = new int[]{1, 0, 0, 0, 1};
+        boolean result1 = test.canPlaceFlowers(flowerbed1, 1);
+        System.out.println(result1);
+
+        int[] flowerbed2 = new int[]{1, 0, 0, 0, 1};
+        boolean result2 = test.canPlaceFlowers(flowerbed2, 2);
+        System.out.println(result2);
+
+        int[] flowerbed3 = new int[]{1, 0, 0, 0, 0, 1};
+        boolean result3 = test.canPlaceFlowers(flowerbed3, 2);
+        System.out.println(result3);
+
+        int[] flowerbed4 = new int[]{1, 0, 0, 0, 1, 0, 0};
+        boolean result4 = test.canPlaceFlowers(flowerbed4, 2);
+        System.out.println(result4);
 
         int[] flowerbed5 = new int[]{0,0,1,0,0};
         boolean result5 = test.canPlaceFlowers(flowerbed5, 1);
