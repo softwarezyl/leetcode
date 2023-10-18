@@ -1,5 +1,7 @@
 package 面试经典150题.链表;
 
+import common.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 

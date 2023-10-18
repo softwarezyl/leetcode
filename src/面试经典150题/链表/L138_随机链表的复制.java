@@ -1,5 +1,7 @@
 package 面试经典150题.链表;
 
+import common.Node;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,9 +1,10 @@
-package 面试经典150题.链表;
+package common;
 
-class Node {
-    int val;
-    Node next;
-    Node random;
+public class Node {
+
+    public int val;
+    public Node next;
+    public Node random;
 
     public Node(int val) {
         this.val = val;
