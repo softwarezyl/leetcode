@@ -62,31 +62,4 @@ public class L92_反转链表II {
             node = next;
         }
     }
-
-    public static void main(String[] args) {
-        L92_反转链表II test = new L92_反转链表II();
-        ListNode listNode = test.arrToListNode(new int[]{1, 2, 3, 4, 5});
-//        test.printListNode(listNode);
-
-        test.reverseBetween(listNode, 2, 4);
-    }
-
-    public ListNode arrToListNode(int[] arr){
-        ListNode head = new ListNode(arr[0]);
-
-        ListNode cur = head;
-        for(int i=1; i<arr.length; i++){
-            cur.next = new ListNode(arr[i]);
-            cur = cur.next;
-        }
-        return head;
-    }
-
-    private void printListNode(ListNode node){
-        while(node != null){
-            System.out.print(node.val + " ");
-            node = node.next;
-        }
-    }
-
 }
