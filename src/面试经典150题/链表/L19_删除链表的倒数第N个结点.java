@@ -1,9 +1,6 @@
 package 面试经典150题.链表;
 
 import common.ListNode;
-import common.ListNodeUtils;
-
-import java.util.Deque;
 import java.util.Stack;
 
 /**

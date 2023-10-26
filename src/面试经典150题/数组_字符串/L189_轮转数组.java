@@ -73,10 +73,4 @@ public class L189_轮转数组 {
     private int gcd(int x, int y) {
         return y > 0 ? gcd(y, x % y) : x;
     }
-
-
-    public static void main(String[] args) {
-
-    }
-
 }

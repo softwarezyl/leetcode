@@ -45,8 +45,4 @@ public class L80_删除有序数组中的重复项II {
         }
         return left;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

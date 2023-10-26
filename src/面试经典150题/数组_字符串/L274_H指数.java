@@ -36,21 +36,4 @@ public class L274_H指数 {
         }
         return hVal;
     }
-
-    public static void main(String[] args) {
-        /*
-        3,0,6,1,5
-
-        1 3
-        2 0
-        3 6
-        4 1
-        5 5
-
-
-
-         */
-
-    }
-
 }

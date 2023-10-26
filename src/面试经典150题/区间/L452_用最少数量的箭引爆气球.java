@@ -59,13 +59,13 @@ public class L452_用最少数量的箭引爆气球 {
     public static void main(String[] args) {
         L452_用最少数量的箭引爆气球 test = new L452_用最少数量的箭引爆气球();
 
-//        int[][] points1 = new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
-//        int result1 = test.findMinArrowShots(points1);
-//        System.out.println(result1);
-//
-//        int[][] points2 = new int[][]{{1, 2}, {3, 4}, {5, 6}, {7, 8}};
-//        int result2 = test.findMinArrowShots(points2);
-//        System.out.println(result2);
+        int[][] points1 = new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
+        int result1 = test.findMinArrowShots(points1);
+        System.out.println(result1);
+
+        int[][] points2 = new int[][]{{1, 2}, {3, 4}, {5, 6}, {7, 8}};
+        int result2 = test.findMinArrowShots(points2);
+        System.out.println(result2);
 
         int[][] points3 = new int[][]{{-2147483646, -2147483645}, {2147483646, 2147483647}};
         int result3 = test.findMinArrowShots(points3);

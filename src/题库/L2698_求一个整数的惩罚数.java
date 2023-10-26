@@ -1,7 +1,5 @@
 package 题库;
 
-import com.sun.media.jfxmediaimpl.HostUtils;
-
 public class L2698_求一个整数的惩罚数 {
 
     public int punishmentNumber(int n) {

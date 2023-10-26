@@ -45,10 +45,10 @@ public class L74_搜索二维矩阵 {
     public static void main(String[] args) {
         L74_搜索二维矩阵 test = new L74_搜索二维矩阵();
 
-//        int[][] matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
-//        int target = 3;
-//        boolean result = test.searchMatrix(matrix, target);
-//        System.out.println(result);
+        int[][] matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
+        int target = 3;
+        boolean result = test.searchMatrix(matrix, target);
+        System.out.println(result);
 
         int[][] matrix2 = {{1}};
         int target2 = 2;

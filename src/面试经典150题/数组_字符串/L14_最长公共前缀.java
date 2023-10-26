@@ -41,17 +41,17 @@ public class L14_最长公共前缀 {
     public static void main(String[] args) {
         L14_最长公共前缀 test = new L14_最长公共前缀();
 
-//        String[] s = new String[]{"flower","flow","flight"};
-//        String result = test.longestCommonPrefix(s);
-//        System.out.println(result);
-//
-//        String[] s2 = new String[]{"dog","racecar","car"};
-//        String result2 = test.longestCommonPrefix(s2);
-//        System.out.println(result2);
+        String[] s = new String[]{"flower","flow","flight"};
+        String result = test.longestCommonPrefix(s);
+        System.out.println(result);
 
-//        String[] s3 = new String[]{"a"};
-//        String result3 = test.longestCommonPrefix(s3);
-//        System.out.println(result3);
+        String[] s2 = new String[]{"dog","racecar","car"};
+        String result2 = test.longestCommonPrefix(s2);
+        System.out.println(result2);
+
+        String[] s3 = new String[]{"a"};
+        String result3 = test.longestCommonPrefix(s3);
+        System.out.println(result3);
 
         String[] s4 = new String[]{"flower","flower","flower","flower"};
         String result4 = test.longestCommonPrefix(s4);
