@@ -2,6 +2,9 @@ package 面试经典150题.二叉树;
 
 import common.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 给你一个二叉树的根节点 root ，树中每个节点都存放有一个 0 到 9 之间的数字。
  * 每条从根节点到叶节点的路径都代表一个数字：
@@ -30,6 +33,7 @@ import common.TreeNode;
  */
 public class L129_求根节点到叶节点数字之和 {
 
+    // 深度优先解法
     public int sumNumbers(TreeNode root) {
         return dfs(root, 0);
     }
@@ -43,5 +47,43 @@ public class L129_求根节点到叶节点数字之和 {
             return sum;
         }
         return dfs(root.left, sum) + dfs(root.right, sum);
+    }
+
+
+    // 广度优先解法
+    public int sumNumbers2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int sum = 0;
+        // 定义两个队列, 一个存储节点, 一个存储节点对应的数字
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        Queue<Integer> numQueue = new LinkedList<>();
+
+        nodeQueue.offer(root);
+        numQueue.offer(root.val);
+
+        while (!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.poll();
+            int num = numQueue.poll();
+
+            TreeNode left = node.left;
+            TreeNode right = node.right;
+
+            if (left == null && right == null) {
+                sum += num;
+            } else {
+                if (left != null) {
+                    nodeQueue.offer(left);
+                    numQueue.offer(num * 10 + left.val);
+                }
+                if (right != null) {
+                    nodeQueue.offer(right);
+                    numQueue.offer(num * 10 + right.val);
+                }
+            }
+        }
+        return sum;
     }
 }
