@@ -30,4 +30,27 @@ public class L222_完全二叉树的节点个数 {
         }
         return countNodes(root.left) + countNodes(root.right) + 1;
     }
+
+    // bfs
+    public int countNodes2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int count = 0;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            count++;
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+        return count;
+    }
 }
