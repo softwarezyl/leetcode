@@ -58,6 +58,25 @@ public class L2660_保龄球游戏的获胜者 {
         return sum;
     }
 
+    // 方法2: 正常通过下标判断
+    public int isWinner2(int[] player1, int[] player2) {
+        int p1 = score(player1);
+        int p2 = score(player2);
+
+        return p1 == p2 ? 0 : p1 > p2 ? 1 : 2;
+    }
+
+    private int score(int[] player) {
+        int sum = 0;
+        for (int i = 0; i < player.length; i++) {
+            if ((i > 0 && player[i - 1] == 10) || i > 1 && player[i - 2] == 10) {
+                sum += 2 * player[i];
+            } else {
+                sum += player[i];
+            }
+        }
+        return sum;
+    }
 
     public static void main(String[] args) {
         L2660_保龄球游戏的获胜者 test = new L2660_保龄球游戏的获胜者();
