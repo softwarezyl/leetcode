@@ -1,4 +1,4 @@
-package 每日一题;
+package 题库;
 
 /**
  * n 个人站成一排，按从 1 到 n 编号。
@@ -19,7 +19,7 @@ package 每日一题;
  * 解释：队伍中枕头的传递情况为：1 -> 2 -> 3 。
  * 2 秒后，枕头传递到第 3 个人手中。
  */
-public class L230926_2582_递枕头 {
+public class L2582_递枕头 {
 
     public int passThePillow(int n, int time) {
         int currentTime = 0;
@@ -42,7 +42,7 @@ public class L230926_2582_递枕头 {
     }
 
     public static void main(String[] args) {
-        L230926_2582_递枕头 test = new L230926_2582_递枕头();
+        L2582_递枕头 test = new L2582_递枕头();
 
         int result1 = test.passThePillow(4, 5);
         System.out.println(result1);
